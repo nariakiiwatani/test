@@ -17,9 +17,9 @@
   "source": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "install": "yarn install",
-    "install:demo": "cd demo && yarn install",
-    "install:all": "yarn run install && yarn install:demo",
+    "setup": "yarn install",
+    "setup:demo": "cd demo && yarn install",
+    "setup:all": "yarn run setup && yarn setup:demo",
     "build": "tsc",
     "build:demo": "cd demo && yarn run build && cp dist/* ../docs",
     "build:all": "yarn run build && yarn run build:demo",
