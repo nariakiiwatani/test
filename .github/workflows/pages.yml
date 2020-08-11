@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 1
 
       - name: Setup
-        run: yarn run install:all
+        run: yarn run setup:all
       
       - name: "Build"
         run: yarn run build:all
