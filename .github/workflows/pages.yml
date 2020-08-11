@@ -14,10 +14,10 @@ jobs:
           fetch-depth: 1
 
       - name: Setup
-        run: cd demo && yarn install --frozen-lockfile
+        run: yarn run install:all
       
       - name: "Build"
-        run: cd demo && yarn run build
+        run: yarn run build:all
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
